@@ -7,6 +7,8 @@
 </head>
 
     <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
        
         * {
 			box-sizing: border-box;
@@ -19,7 +21,7 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Flexbox container for the body */
+        /* Flexbox body */
         .container {
             display: flex;
             flex-direction: column;
@@ -29,7 +31,7 @@
             background-color: #f4f4f4;
         }
 
-        /* Top section: flex container for the 2 buttons at the top left */
+        /* Top section: flex container*/
         .top-buttons {
             display: flex;
             justify-content: flex-start;
@@ -40,37 +42,40 @@
         .top-buttons a {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #003366; /* Dark blue */
+            background-color: #003366; 
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-size: 14px;
+			font-family: "Roboto Condensed";
+			
         }
 
-        /* Center section: Flex container for the 3 center buttons */
+        /* Center flex */
         .center-buttons {
             display: flex;
-            justify-content: center; /* Horizontally center the buttons */
-            align-items: center; /* Vertically center the buttons */
-            flex-grow: 1; /* Make the container take up all available space */
-            gap: 20px; /* Space between the buttons */
+            justify-content: center; 
+            align-items: center; 
+            flex-grow: 1; 
+            gap: 20px; 
         }
 
-        /* Styles for the 3 center buttons */
+        /* 3 center buttons */
         .center-buttons a {
             display: inline-block;
             padding: 20px 40px;
-            background-color: #007bff; /* Blue */
+            background-color: #11abb0;
             color: white;
             text-decoration: none;
             border-radius: 10px;
             font-size: 18px;
             text-align: center;
             width: 200px;
+			font-family: "Roboto Condensed";
         }
 
         .center-buttons a:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            background-color: #dc0976; 
         }
 
 
@@ -79,7 +84,7 @@
 <body>
 
     <div class="container">
-        <!-- Top section with 2 buttons -->
+        <!-- Top nav -->
         <div class="top-buttons">
             <a href="https://designingfriction.com/" target="_blank">Article Link</a>
             <a href="./"class="top-buttons">Home</a>
