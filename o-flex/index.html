@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML friction</title>
+</head>
+
+<style>
+
+	/*
+	
+$rose: #ff0084;
+$chartreuse: #88ff00;
+$gunmetal: #293337;
+$aqua: #00fbff;
+$blue: #0026ff;
+
+*/
+
+	@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+	body {
+		background-color: #293337;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/*navigation*/
+
+	.top-buttons {
+		display: flex;
+		justify-content: flex-start;
+		gap: 10px;
+	}
+
+	.top-buttons a {
+		display: inline-block;
+		padding: 10px 20px;
+		background-color: #003366;
+		color: white;
+		text-decoration: none;
+		border-radius: 5px;
+		font-size: 14px;
+	}
+
+	.button1 {
+		background-color: #1c87c9;
+		border: none;
+		color: white;
+		padding: 10px 14px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 12px;
+		margin:
+			4px 2px;
+		cursor: pointer;
+	}
+
+	/* friction title */
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+	}
+
+	/* flex parent */
+	.headbox {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	/* flex child */
+	.letter1 {
+		flex-grow: 0;
+		font-family: "Rubik Beastly";
+		color:#242d31;
+		font-size: 200px;
+		padding-top: 0px;
+		border-radius: 0;
+		background-color:#293337;
+		;
+		text-align: top;
+		place-items: center;
+		transition: .2s;
+		gap: 0px;
+		animation-name: vert-mo1;
+		animation-iteration-count: infinite;
+		animation-duration: 2s;
+	}
+
+	.letter2 {
+		flex-grow: 0;
+		font-family: "Rubik Beastly";
+		color:#242d31;
+		font-size: 200px;
+		padding-top: 0px;
+		border-radius: 0;
+		background-color: #293337;
+		text-align: top;
+		place-items: center;
+		transition: .2s;
+		gap: 0px;
+		animation-name: vert-mo2;
+		animation-iteration-count: infinite;
+		animation-duration: 2s;
+	}
+
+
+	@keyframes vert-mo1 {
+		0% {padding-top: 100px;}
+		50% {padding-top: 0px; }
+		100% {padding-top: 100px;}
+	}
+
+	@keyframes vert-mo2 {
+		0% {padding-top: 0px;}
+		50% {padding-top: 100px;}
+		100% {padding-top: 0px;}
+	}
+
+
+	.letter1:hover {
+		flex-grow: 1;
+		color: #88ff00;
+		text-shadow: chartreuse 0px 0px 39px;
+		font-size: 230px;
+	}
+	
+	.letter2:hover {
+		flex-grow: 1;
+		color: #0026ff;
+		text-shadow: blue 0px 0px 39px;
+		font-size: 230px;
+	}
+
+	.heading {
+		font-family: "Rubik Distressed";
+		font-size: 60px;
+		justify-content: center;
+		align-items: center;
+		color:#242d31;
+		
+	}
+
+	.heading1{
+		font-family: "Rubik Distressed";
+		font-size: 30px;
+		justify-content: center;
+		align-items: center;
+		color: #ff0084;
+	
+	}
+
+	/*article body */
+
+/*
+	body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+	*/
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+
+.container {
+	min-height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    background: #fff;
+	opacity:40%;
+    padding: 20px;
+    border-radius: 2px;
+    margin: 0 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+	justify-content: center;
+}
+
+	@media (max-width: 600px) {
+
+.container {
+	max-width: 500px;
+	padding: 10px;
+}
+
+.container p {
+	font-size: 16px;
+}
+	}
+
+/*
+div {
+  border: solid 3px;
+  padding: 1em;
+  max-width: 75%;
+}
+
+.item {
+  border: 2px solid rgb(95 97 110);
+  border-radius: 0.5em;
+  padding: 20px;
+  width: 10em;
+}
+
+.container {
+  height: 8em;
+  border: 2px solid rgb(75 70 74);
+  border-radius: 0.5em;
+  font: 1.2em sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
+
+
+
+/*trial*/
+
+	
+
+.para1 {
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	}
+
+	.para1a{
+		font-family: "Roboto Condensed";
+		font-size: 20px;
+		justify-content: center;
+		align-items: center;
+		color: aqua;
+
+	}
+
+
+
+
+
+</style>
+
+<body>
+
+
+
+	<div class="top-buttons">
+		<a href="https://designingfriction.com/" target="_blank">Article Link</a>
+		<a href="../" class="top-buttons">Home</a>
+
+	</div>
+
+	<div class="headbox">
+		<div class="heading">DESIGNING</div>
+	</div>
+
+
+	<div class="headbox">
+		<div class="letter1">F</div>
+		<div class="letter2">R</div>
+		<div class="letter1">I</div>
+		<div class="letter2">C</div>
+		<div class="letter1">T</div>
+		<div class="letter2">I</div>
+		<div class="letter1">O</div>
+		<div class="letter2">N</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+
+	<div class="headbox">
+		<div class="heading1">A call for friction in digital culture</div>
+	</div>
+
+
+<br>
+<br>
+
+<div class="container">
+	<div class="container p">As designers, entrepreneurs and architects of digital culture we feel the urge to refocus how we deal with our digital futures. 
+		Designing Friction is a proposal to change the way we think when producing or interacting with digital technology.</div>
+</div>
+
+<br>
+
+<div class="para1">
+	<div class="para1a">What is friction?</div>
+	
+  </div>
+
+
+
+</body>
+
+
+
+</html>
+

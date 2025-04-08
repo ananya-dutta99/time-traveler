@@ -5,67 +5,104 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Designing Friction through time</title>
 </head>
+
+    <style>
+       
+        * {
+			box-sizing: border-box;
+			margin: 0;
+
+        }
+
+        body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Flexbox container for the body */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Top section: flex container for the 2 buttons at the top left */
+        .top-buttons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        /* Styles for the two buttons at the top left */
+        .top-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #003366; /* Dark blue */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Center section: Flex container for the 3 center buttons */
+        .center-buttons {
+            display: flex;
+            justify-content: center; /* Horizontally center the buttons */
+            align-items: center; /* Vertically center the buttons */
+            flex-grow: 1; /* Make the container take up all available space */
+            gap: 20px; /* Space between the buttons */
+        }
+
+        /* Styles for the 3 center buttons */
+        .center-buttons a {
+            display: inline-block;
+            padding: 20px 40px;
+            background-color: #007bff; /* Blue */
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .center-buttons a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+
+    </style>
+</head>
 <body>
 
+    <div class="container">
+        <!-- Top section with 2 buttons -->
+        <div class="top-buttons">
+            <a href="https://designingfriction.com/" target="_blank">Article Link</a>
+            <a href="./"class="top-buttons">Home</a>
 
-	<nav>
-		<a href="./"class="button1">Home</a>
-		<a href="https://designingfriction.com/" target="_blank" class="button1">Original Article</a>
+        </div>
 
-		<br>
+        <!-- Center section with 3 buttons -->
+        <div class="center-buttons">
+            <a href="o-html/">html</a>
+            <a href="o-css/">css</a> 
+            <a href="o-flex/">flex</a>
 
-		<a href="o-html/"class="button2";>HTML version</a>
-		<a href="o-css/"class="button3">CSS version</a>
-	</nav>
+			
 
-<style>
+        </div>
+    </div>
 
-	
-body {
-  background-image: url("https://4kwallpapers.com/images/wallpapers/spiral-abstract-1920x1080-10201.jpg");background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center
-}
-.button1 { background-color: #1c87c9; 
-border: none; 
-color: white; 
-padding: 10px 14px; 
-text-align: center; 
-text-decoration: none; 
-display: inline-block; 
-font-size: 12px; margin: 
-4px 2px; 
-cursor: pointer; }
+</body>
+</html>
 
-.button2 { background-color:teal; 
-	position: absolute;
-      top: 50%;
-      left: 40%;
-border: none; 
-color: white; 
-padding: 20px 34px; 
-text-align: center; 
-text-decoration: none; 
-display: inline-block; 
-font-size: 20px; margin: 
-4px 2px; 
-cursor: pointer; }
 
-.button3 { background-color:teal; 
-	position: absolute;
-      top: 50%;
-      left: 60%;
-border: none; 
-color: white; 
-padding: 20px 34px; 
-text-align: center; 
-text-decoration: none; 
-display: inline-block; 
-font-size: 20px; margin: 
-4px 2px; 
-cursor: pointer; }
 
-</style>
 
-	</body>
+
+
 </html>
