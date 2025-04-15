@@ -4,268 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HTML friction</title>
+	<title>designing friction - flex</title>
+	<link rel="stylesheet" href="flex.css">
 </head>
 
-<style>
-
-	/*
-	
-$rose: #ff0084;
-$chartreuse: #88ff00;
-$gunmetal: #293337;
-$aqua: #00fbff;
-$blue: #0026ff;
-
-*/
-
-	@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
-	body {
-		background-color: #293337;
-		align-items: center;
-		justify-content: center;
-	}
-
-	/*navigation*/
-
-	.top-buttons {
-		display: flex;
-		justify-content: flex-start;
-		gap: 10px;
-	}
-
-	.top-buttons a {
-		display: inline-block;
-		padding: 10px 20px;
-		background-color: #003366;
-		color: white;
-		text-decoration: none;
-		border-radius: 5px;
-		font-size: 14px;
-	}
-
-	.button1 {
-		background-color: #1c87c9;
-		border: none;
-		color: white;
-		padding: 10px 14px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 12px;
-		margin:
-			4px 2px;
-		cursor: pointer;
-	}
-
-	/* friction title */
-
-	* {
-		box-sizing: border-box;
-		margin: 0;
-	}
-
-	/* flex parent */
-	.headbox {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-
-	/* flex child */
-	.letter1 {
-		flex-grow: 0;
-		font-family: "Rubik Beastly";
-		color:#242d31;
-		font-size: 200px;
-		padding-top: 0px;
-		border-radius: 0;
-		background-color:#293337;
-		;
-		text-align: top;
-		place-items: center;
-		transition: .2s;
-		gap: 0px;
-		animation-name: vert-mo1;
-		animation-iteration-count: infinite;
-		animation-duration: 2s;
-	}
-
-	.letter2 {
-		flex-grow: 0;
-		font-family: "Rubik Beastly";
-		color:#242d31;
-		font-size: 200px;
-		padding-top: 0px;
-		border-radius: 0;
-		background-color: #293337;
-		text-align: top;
-		place-items: center;
-		transition: .2s;
-		gap: 0px;
-		animation-name: vert-mo2;
-		animation-iteration-count: infinite;
-		animation-duration: 2s;
-	}
-
-
-	@keyframes vert-mo1 {
-		0% {padding-top: 100px;}
-		50% {padding-top: 0px; }
-		100% {padding-top: 100px;}
-	}
-
-	@keyframes vert-mo2 {
-		0% {padding-top: 0px;}
-		50% {padding-top: 100px;}
-		100% {padding-top: 0px;}
-	}
-
-
-	.letter1:hover {
-		flex-grow: 1;
-		color: #88ff00;
-		text-shadow: chartreuse 0px 0px 39px;
-		font-size: 230px;
-	}
-	
-	.letter2:hover {
-		flex-grow: 1;
-		color: #0026ff;
-		text-shadow: blue 0px 0px 39px;
-		font-size: 230px;
-	}
-
-	.heading {
-		font-family: "Rubik Distressed";
-		font-size: 60px;
-		justify-content: center;
-		align-items: center;
-		color:#242d31;
-		
-	}
-
-	.heading1{
-		font-family: "Rubik Distressed";
-		font-size: 30px;
-		justify-content: center;
-		align-items: center;
-		color: #ff0084;
-	
-	}
-
-	/*article body */
-
-/*
-	body {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-	*/
-
-
-* {
-	box-sizing: border-box;
-	margin: 0;
-}
-
-
-.container {
-	min-height: 10vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 600px;
-    background: #fff;
-	opacity:40%;
-    padding: 20px;
-    border-radius: 2px;
-    margin: 0 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.container p {
-	flex-grow: 1; 
-    font-size: 18px;
-    font-weight: 400;
-    text-align: justify;
-	justify-content: center;
-}
-
-	@media (max-width: 600px) {
-
-.container {
-	max-width: 500px;
-	padding: 10px;
-}
-
-.container p {
-	font-size: 16px;
-}
-	}
-
-/*
-div {
-  border: solid 3px;
-  padding: 1em;
-  max-width: 75%;
-}
-
-.item {
-  border: 2px solid rgb(95 97 110);
-  border-radius: 0.5em;
-  padding: 20px;
-  width: 10em;
-}
-
-.container {
-  height: 8em;
-  border: 2px solid rgb(75 70 74);
-  border-radius: 0.5em;
-  font: 1.2em sans-serif;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-*/
-
-
-
-/*trial*/
-
-	
-
-.para1 {
-	display: flex;
-	align-items: center; 
-	justify-content: center;
-	width: 100vw;
-	height: 100vh;
-	}
-
-	.para1a{
-		font-family: "Roboto Condensed";
-		font-size: 20px;
-		justify-content: center;
-		align-items: center;
-		color: aqua;
-
-	}
-
-
-
-
-
-</style>
 
 <body>
 
@@ -278,7 +20,7 @@ div {
 	</div>
 
 	<div class="headbox">
-		<div class="heading">DESIGNING</div>
+		<div class="heading">designing</div>
 	</div>
 
 
@@ -296,32 +38,144 @@ div {
 	<br>
 	<br>
 	<br>
+	<br>
+	<br><br><br><br><br><br><br><br>
 
-	<div class="headbox">
-		<div class="heading1">A call for friction in digital culture</div>
-	</div>
+	<div class="marquee-container">
+		<marquee scrollamount="30">A call for friction in design culture | A call for friction in design culture |</marquee>
+	  </div>
 
 
-<br>
-<br>
 
 <div class="container">
-	<div class="container p">As designers, entrepreneurs and architects of digital culture we feel the urge to refocus how we deal with our digital futures. 
+	<div class="p">As designers, entrepreneurs and architects of digital culture we feel the urge to refocus how we deal with our digital futures. 
 		Designing Friction is a proposal to change the way we think when producing or interacting with digital technology.</div>
 </div>
 
 <br>
 
-<div class="para1">
-	<div class="para1a">What is friction?</div>
-	
+
+
+<br>
+
+<div class="wrapper">
+    <div class="container2">
+      <div class="box" data-default="WHAT is friction?" data-hover="Friction is resistance. It derives from physical interaction between humans, and humans and things – its reach is holistic. All senses, elements and emotions play a role: sight, sound, smell, taste, touch, air, earth, temperature, agitation, passion, joy, sadness... With movement comes friction. The more we move and act, the more friction we encounter. The more friction there is, the more we engage and care. Friction drives our engagement. Friction, in this context, is not synonymous with either anger or conflict, nor is it malfunctioning technology. Friction is an essential ingredient that makes up our humanness and sparks human connection. Friction is a lively, intrinsic experience."></div>
+      <div class="box" data-default="LOSS of friction" data-hover="Digital technology has long pursued the goal of eliminating friction, striving for seamlessness. We now navigate a sea of frictionless experiences. (With the possible exception of two factor authentication.)"></div>
+    </div>
   </div>
 
 
+<br>
 
-</body>
+  <div class="wrapper">
+    <div class="container3">
+      <div class="box2" data-default="Funtion and Form are detached" data-hover="Digital technology goes hand-in-hand with the loss of physical resistance. Philosopher Haroon Sheikh explains that digital technology turns our interactions with things into interactions with devices. A thing is split into its object, or form, and its function. A device is the same object for each function. It’s your purse, your musical instrument and your letterbox, each of which now demands the same bodily action"></div>
+      <div class="box2" data-default="Removing physical human interaction" data-hover="Instead of using our whole hand to interact, we now often use our fingertips to swipe screens or interact with air. Each new app or innovation replaces a previously friction-laden human interaction process, David Byrne states. Transactions with machines are perceived to be smoother than interactions with fellow humans."></div>
+	  <div class="box2" data-default="Convenience and immediacy" data-hover="Everything can be effortlessly and immediately accessed from behind our screens. We stay home due to home-delivery, dating apps, online classes and endless on-demand entertainment. We are facing ‘death by convenience’. In such a reality, movement is trimmed down to a minimum."></div>
+	</div>
+</div>
+
+<div class="wrapper">
+    <div class="container3">
+		<div class="box2" data-default="Predictability" data-hover="In this reality, data is king. In creating convenience, all our actions are recorded and translated into data, rendering them readable and predictable. The better the data, the better the predictability. Unpredictability, human messiness and unforeseen actions are all friction, and counter this goal. Predictable futures can be controlled."></div>
+		<div class="box2" data-default="Loss of autonomy" data-hover="Keeping friction out maintains a fragile equilibrium. Enter AI — technology becomes omnipresent, and evolves from being a tool, to being a companion with humanlike appeal. We are on the verge of committing our emotions to AI, plunging into an emotional dependency. AI indulges us, consumes us. Its appeal gives us the comforts and conveniences we learn to seek. To get satisfaction from interaction with a model, you need to perform your predictable self. It becomes almost impossible to step out, to live frictionfully. Our autonomy is at stake."></div>
+		<div class="box2" data-default="and so..." data-hover="Philosopher Miriam Rasch argues that complete removal of friction means standing still. A completely predictable future is no future, but a continuous present. In a world where even our deepest desires can be foreseen, where we have lost our autonomy, we long for what remains beyond the domain of data, algorithms and databases and AI"></div>
+	</div>
+</div>
 
 
 
+<br> <br>
+
+
+
+<div class="headbox2">
+	<div class="letterA">P</div>
+	<div class="letterB">R</div>
+	<div class="letterA">O</div>
+	<div class="letterB">P</div>
+	<div class="letterA">O</div>
+	<div class="letterB">S</div>
+	<div class="letterA">A</div>
+	<div class="letterB">L</div>
+</div>
+
+
+<br>
+
+
+<div class="container">
+	<div class="p">A world headed for a frictionless reality begs the question: how can we create a desirable future with digital technology? How can we access, develop and relate to it? We like to see designing friction as a fundamental design principle when working with digital culture. Instead of following design ethics that strive to eliminate friction, we suggest to not only allow, but embrace friction. To facilitate it: design [products with] digital technology in a way that makes space for our humanness. Here friction is a core ingredient. Digital technology should create environments and situations in which we can truly connect with each other, as well as with the unknown, the uncontrolled, with all senses, all elements, all emotions. It should create situations that are not predicted, measured and calculated beforehand; situations that result from and amount to the present moment.
+
+	</div>
+</div>
+
+
+<br>
+
+<div class="wrapper">
+<div class="container-s">
+
+	<div class="card">
+
+		<h2>dIsCoMfOrT</h2>
+		<br>
+		<p>Embrace uncomfortable situations. In uncomfortable environments we can discover the richness and breadth of friction. Uncomfortable situations help you to feel structures you are not adjusted to, you can learn and discover. With friction we get immersed, we get creative, we get alive. Discomfort allows us to experience boundaries both physically and mentally (these are necessary and productive). Designing friction is exploring boundaries.</p>
+
+	</div>
+
+	<div class="card">
+		<h2>Time delay</h2>
+		<br>
+		<p>Friction makes things slower and that is okay! The fastest response might not be the best one to design for. Instant gratification is what digital technology currently optimizes for. This results in the loss of desire, waiting and boredom. Avoiding boredom makes us pick up a device as soon as we have nothing to do. Being bored lets you start new fascinations. Boredom gets us into productive flow. When friction acts to slow things down it allows us to step into the now. Designing friction is fuelling longing and desire; it allows boredom and allows for a slower pace</p>
+
+	</div>
+
+	<div class="card">
+		<h2>Engage the body</h2>
+		<br>
+		<p>When interacting with screens we lack resistance. Swiping screens makes our world more superficial. Human life gains depth when having thing-relations. Thing-relations tend to bring us together physically and create connections. Designing friction requires thinking about how to increase our resistance. How can we engage our hands and whole bodies? How can these bodily engagements bring us together?</p>
+
+	</div>
+
+	<div class="card">
+
+		<h2>Non-positive</h2>
+		<br>
+		<p>Acknowledge the fulfilment in the non-positive. Today’s digital technology creates a society that is in ‘pursuit of happiness’, in awe of positivity. (As a counterweight of the negativity it produces?) Smoothness doesn’t injure. It doesn’t produce resistance. It enforces the Like. These mechanisms feed our desire for attention and being seen. Designing friction cherishes the non-positive, the ‘digital unseen’, the disagreement, the doubt, the vulnerable, the complicated. This is what makes us human.</p>
+
+	</div>
+
+
+
+
+
+</div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="container-2">
+	<div class="p">Perform your unpredictable self. 
+		<br>
+		<br>
+		Design environments and situations that trigger and facilitate unpredictable behaviour. 
+		<br>
+		<br>
+		
+		De-automise. Step out of your pattern. Do something strange.
+<br><br>
+		Friction perceived as an obstacle might in fact be a possibility for connection.
+		
+		
+
+	</div>
+
+
+
+	
+	</body>
 </html>
 

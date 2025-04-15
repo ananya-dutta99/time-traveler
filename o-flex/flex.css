@@ -1,0 +1,581 @@
+
+
+	/*
+	
+$rose: #ff0084;
+$chartreuse: #88ff00;
+$gunmetal: #293337;
+$aqua: #00fbff;
+$blue: #0026ff;
+
+*/
+
+	@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+	body {
+		background-color: #293337;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/*navigation*/
+
+	.top-buttons {
+		display: flex;
+		justify-content: flex-start;
+		gap: 10px;
+	}
+
+	.top-buttons a {
+		display: inline-block;
+		padding: 10px 20px;
+		background-color: #0026ff;
+		color: white;
+		text-decoration: none;
+		border-radius: 5px;
+		font-size: 14px;
+	}
+
+	
+
+	/* FRICTION TITLE */
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+	}
+
+	/* flex parent */
+	.headbox {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 20vh;
+	}
+
+
+	/* flex child */
+	.letter1 {
+		flex-grow: 0;
+		font-family: "Rubik Beastly";
+		color:#242d31;
+		font-size: 200px;
+		padding-top: 0px;
+		border-radius: 0;
+		background-color:rgba(0, 0, 0, 0) ;
+		text-align: top;
+		place-items: center;
+		transition: .2s;
+		gap: 0px;
+		animation-name: vert-mo1;
+		animation-iteration-count: infinite;
+		animation-duration: 2s;
+	}
+
+	.letter2 {
+		flex-grow: 0;
+		font-family: "Rubik Beastly";
+		color:#242d31;
+		font-size: 200px;
+		padding-top: 0px;
+		border-radius: 0;
+		background-color:rgba(0, 0, 0, 0) ;
+		text-align: top;
+		place-items: center;
+		transition: .2s;
+		gap: 0px;
+		animation-name: vert-mo2;
+		animation-iteration-count: infinite;
+		animation-duration: 2s;
+	}
+
+
+	@keyframes vert-mo1 {
+		0% {padding-top: 100px;}
+		50% {padding-top: 0px; }
+		100% {padding-top: 100px;}
+	}
+
+	@keyframes vert-mo2 {
+		0% {padding-top: 0px;}
+		50% {padding-top: 100px;}
+		100% {padding-top: 0px;}
+	}
+
+
+	.letter1:hover {
+		flex-grow: 1;
+		color: #88ff00;
+		text-shadow: chartreuse 0px 0px 39px;
+		font-size: 230px;
+	}
+	
+	.letter2:hover {
+		flex-grow: 1;
+		color: #0026ff;
+		text-shadow: blue 0px 0px 39px;
+		font-size: 230px;
+	}
+
+
+	/* FIRST WORD - DESIGNING */
+
+	.heading {
+		font-family: "Special Gothic Expanded One";
+		font-size: 40px;
+		font-weight:1000px;
+		justify-content: center;
+		align-items: center;
+		color:#ff0084;
+		
+	}
+
+	
+	/*MARQUEE SUBHEADING */
+
+	.marquee-container {
+		width: flex; 
+		height: 50px; 
+		background-color:#ff0084; 
+		font-family: "Special Gothic Expanded One";
+		margin:none;
+		font-size:50px;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		color:  #88ff00;
+	
+
+	  }
+
+
+
+/*INTRO PARA GREY BOX*/ 
+
+
+/*
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.container {
+	min-height: 10vh;
+	font-family: "Special Gothic Expanded One";
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    background: #fff;
+	opacity:40%;
+    padding: 40px;
+    border-radius: 2px;
+    margin: 0 auto;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	animation-name:rotatin;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+
+.container p {
+	flex-grow: 1; 
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+	justify-content: center;
+}
+
+	@media (max-width: 600px) {
+
+.container {
+	max-width: 500px;
+	padding: 10px;
+}
+
+.container p {
+	font-size: 15px;
+}
+	}
+
+	@keyframes rotatin {
+		0% {transform:rotate(10);}
+		50% {transform:rotate(-10);}
+		100% {transform:rotate(10);}
+	}
+		*/
+
+		@keyframes rotatin {
+			0% { transform: rotate(10deg); }
+			50% { transform: rotate(-10deg); }
+			100% { transform: rotate(10deg); }
+		}
+		
+		.container {
+			display: flex;
+			min-height: 10vh;
+			font-family: "Special Gothic Expanded One";
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+			max-width: 600px;
+			background: #fff;
+			opacity: 40%;
+			padding: 40px;
+			border-radius: 2px;
+			margin: 0 auto;
+			box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+			
+			animation-name: rotatin;
+			animation-iteration-count: infinite;
+			animation-duration: 2s;
+			animation-timing-function: ease-in-out; 
+			transform-origin: center; 
+		}
+
+		@media (max-width: 600px) {
+			.container {
+				max-width: 500px;
+				padding: 10px;
+			    animation-duration: 3s;
+			}
+		}
+
+/*WHAT AND LOSS*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Special Gothic Expanded One";
+    padding: 20px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container2 {
+    display: flex;
+    width: 70%;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    flex: 1;
+    padding: 40px;
+    background-color:#88ff00;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    min-width: 200px;
+    position: relative;
+    transition: 0.5s;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .box::before {
+    content: attr(data-default);
+    display: flex;
+	transition: 0.5s;
+    
+  }
+
+  .box:hover::before {
+	flex: 1;
+    content: attr(data-hover);;
+    padding: 10 px;
+    font-size: 20px;
+    font-family: "Roboto Condensed";
+    margin: 20px;
+    color: whitesmoke;
+	transition: 0.5s;
+
+  }
+
+  @media (max-width: 600px) {
+	.box:hover::before {
+		max-width: 500px;
+		padding: 10px;
+		font-size: 10px;
+	}
+}
+
+
+  /* 5 types of loss*/
+
+  .container3 {
+    display: flex;
+    width: 70%;
+	height: 30vh;
+    gap: 50px;
+    flex-wrap: wrap;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+  }
+
+  .box2 {
+    flex: 1;
+    padding: 60px;
+    background-color:#0026ff;
+    color: whitesmoke;
+    text-align: center;
+	justify-content: center;
+    font-size: 20px;
+    min-width: 200px;
+    position: relative;
+    transition: 0.5s;
+	border-radius: 50%;
+	border-color: #0026ff;
+	transition: 0.5s;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+
+  }
+
+  
+  .box2::before {
+    content: attr(data-default);
+    display: flex;
+    border-radius: 5%;
+	transition: 0.5s;
+	color:#ff0084;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .box2:hover::before {
+	
+    content: attr(data-hover);
+    padding: 5 px;
+    font-size: 10px;
+    font-family: "Roboto Condensed";
+    color: whitesmoke;
+    border-radius: 20%;
+	transition: 0.2s;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	
+  }
+
+
+
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: row;
+      width: 90%;
+    }
+  }
+
+  
+
+   
+/*PROPOSAL*/
+
+
+.headbox2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 20vh;
+}
+
+
+/* flex child */
+.letterA {
+	flex-grow: 0;
+	font-family: "Rubik Beastly";
+	color:#242d31;
+	font-size: 100px;
+	padding-top: 0px;
+	border-radius: 0;
+	background-color:rgba(0, 0, 0, 0) ;
+	text-align: top;
+	place-items: center;
+	transition: .2s;
+	gap: 0px;
+	animation-name: vert-moA;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+}
+
+.letterB {
+	flex-grow: 0;
+	font-family: "Rubik Beastly";
+	color:#242d31;
+	font-size: 100px;
+	padding-top: 0px;
+	border-radius: 0;
+	background-color:rgba(0, 0, 0, 0) ;
+	text-align: top;
+	place-items: center;
+	transition: .2s;
+	gap: 0px;
+	animation-name: vert-moB;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+}
+
+
+@keyframes vert-moA {
+	0% {padding-top: 30px; color:#242d31;}
+	50% {padding-top: 0px;color:#ff0084}
+	100% {padding-top: 30px;color:#242d31;}
+}
+
+@keyframes vert-moB {
+	0% {padding-top: 0px;color:#242d31;}
+	50% {padding-top: 30px;color:#ff0084}
+	100% {padding-top: 0px;color:#242d31;}
+}
+
+/* WAYS OF CREATING FRCTION*/
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+::-webkit-scrollbar {
+    height: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: aqua;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0026ff;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff0084;
+}
+
+.container-s {
+    display: flex;
+    gap: 12px;
+    max-width: 900px;
+    width: 100%;
+    background: chartreuse;
+    border-radius: 8px;
+    padding: 40px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+	
+}
+
+.container-s .card {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    border-radius: 2px;
+    background:whitesmoke;
+    /*scroll-snap-align: start;*/
+    
+}
+
+
+.card h2 {
+    margin-top: 5px;
+    color: aqua;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card {
+    margin-top: 4px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+	font-family: "Roboto Condensed"
+}
+
+
+@media (max-width: 460px) {
+
+    .container-s {
+        padding: 20px;
+        max-width: 360px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .container-s {
+        padding: 15px;
+        max-width: 300px;
+        width: 100%;
+    }
+}
+	
+.container-2 {
+	display: flex;
+	min-height: 10vh;
+	font-family: "Roboto Condensed";
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	max-width: 600px;
+	background: rgba(0, 0, 0, 0);
+	opacity: 100%;
+	padding: 40px;
+	border-radius: 2px;
+	margin: 0 auto;
+	color: aqua;
+	animation-name: color-ch;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out; 
+	transform-origin: center; 
+}
+
+@media (max-width: 600px) {
+	.container {
+		max-width: 500px;
+		padding: 10px;
+		animation-duration: 3s;
+	}
+}
+
+@keyframes color-ch {
+	0% { color:aqua; }
+	50% { color:#ff0084; }
+	100% { color:aqua; }
+}
+
+
+.wrapper-end {
+    display: flex;
+	padding: 300px;
+	max-width: 100px;
+	margin:200px;
+    justify-content: center;
+  }
+
+
+  /* code credit: references from - https://html-css-projects-phi.vercel.app/ */
+
+
