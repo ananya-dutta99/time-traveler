@@ -335,10 +335,9 @@ $blue: #0026ff;
     font-size: 20px;
     min-width: 200px;
     position: relative;
-    transition: 0.5s;
 	border-radius: 50%;
 	border-color: #0026ff;
-	transition: 0.5s;
+	transition: color 0.5s, font-size .5s;
 	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 
   }
@@ -348,7 +347,7 @@ $blue: #0026ff;
     content: attr(data-default);
     display: flex;
     border-radius: 5%;
-	transition: 0.5s;
+	/* transition: 0.5s; */
 	color:#ff0084;
 	text-align: center;
 	align-items: center;
@@ -363,7 +362,7 @@ $blue: #0026ff;
     font-family: "Roboto Condensed";
     color: whitesmoke;
     border-radius: 20%;
-	transition: 0.2s;
+	/* transition: 0.2s; */
 	text-align: center;
 	align-items: center;
 	justify-content: center;
